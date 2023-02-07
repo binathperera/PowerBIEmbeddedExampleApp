@@ -1,0 +1,60 @@
+﻿@layout LoginLayout
+@using Microsoft.Data.SqlClient;
+@page "/"
+@inject NavigationManager _navigationManager;
+
+<div>
+    <EditForm Model="@loginModel" OnSubmit="@HandleSubmit" id="login-form">
+        <h1 style="text-align:center">Login</h1>
+        <InputText id="id" @bind-Value="id" />
+        <button type="submit">Submit</button>
+    </EditForm>
+</div>
+
+
+@code {
+    private String id="";
+    private Data.LoginModel loginModel = new();
+    private void HandleSubmit()
+    {
+        SetParameters();
+        _navigationManager.NavigateTo($"home/{id}");
+    }
+    private Data.UserInfoGlobalClass userInfo = new Data.UserInfoGlobalClass();
+
+    private void SetParameters()
+    {
+        Data.UserInfoGlobalClass.ob = userInfo;
+        //String connectionString = "Data Source=bluelotus360.co;Initial Catalog=BL10Data;Integrated Security=True;Encrypt=False;TrustServerCertificate=True";
+        //SqlConnection connection = new SqlConnection(connectionString);
+        SqlConnection connection = new SqlConnection(
+                                        new SqlConnectionStringBuilder()
+                                            {
+                                                DataSource = "bluelotus360.co",
+                                                InitialCatalog = "BL10Data",
+                                                UserID = "Binath",
+                                                Password = "Bin@th4123",
+                                                TrustServerCertificate = true
+                                            }.ConnectionString
+                                        );
+        connection.Open();
+        try
+        {
+            String sql = "Select CNm from Company where CKy="+id;
+            using (SqlCommand command = new SqlCommand(sql, connection))
+            {
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        userInfo.SetName(reader.GetString(0));
+                    }
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+    }
+}

@@ -1,0 +1,170 @@
+﻿@layout MainLayout
+@using BlazorAppPowerBI.Data;
+@using System.Net.Http;
+@using System.Threading.Tasks;
+@using Microsoft.Identity.Client;
+@using Microsoft.PowerBI.Api;
+@using Microsoft.PowerBI.Api.Models;
+@using Microsoft.Rest;
+@using Newtonsoft.Json.Linq;
+@using Microsoft.Extensions.Configuration;
+@using Microsoft.AspNetCore.Mvc;
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@inject IHttpClientFactory ClientFactory
+
+@implements IAsyncDisposable
+
+@inject IJSRuntime JS
+@inject IConfiguration _configuration
+
+
+@page "/home/{id}"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Dashboard</h1>
+
+@if (reportViewModel is null)
+{
+    <label>Trying to get report info...</label>
+    <br />
+}
+@if (!String.IsNullOrEmpty(errorMessage))
+{
+    <label style="font-weight:700">Cannot embed Power BI Report:</label>
+    <span>@errorMessage</span>
+}
+
+<div id="embed-container" style="height:800px" />
+
+@code {
+    [Parameter]
+    public String id { get; set; }
+
+    [CascadingParameter]
+    public Data.UserInfoGlobalClass userInfo { get; set; }
+
+    private string errorMessage = String.Empty;
+
+    private IJSObjectReference? embedModule;
+    private EmbeddedReportViewModel? reportViewModel;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        userInfo.SetId(id);
+        try
+        {
+            if (firstRender)
+            {
+                var embedModuleTask = JS.InvokeAsync<IJSObjectReference>("import", "./embed.js");
+                var reportViewModelTask = GetReportEmbedding();
+                embedModule = await embedModuleTask;
+                reportViewModel = await reportViewModelTask;
+                StateHasChanged();
+            }
+            else if (embedModule is not null && reportViewModel is not null)
+            {
+                errorMessage = String.Empty;
+                await embedModule.InvokeVoidAsync("embedReport",
+                        "embed-container",
+                        reportViewModel.Id,
+                        reportViewModel.EmbedUrl,
+                        reportViewModel.Token);
+            }
+            else
+            {
+                errorMessage = "embed.js not loaded or cannot get report embedding information.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+        }
+    }
+
+    async ValueTask IAsyncDisposable.DisposeAsync()
+    {
+        if (embedModule is not null)
+        {
+            await embedModule.DisposeAsync();
+        }
+    }
+    public async Task<EmbeddedReportViewModel> GetReportEmbedding()
+    {
+        embedModule = await JS.InvokeAsync<IJSObjectReference>("import", "./embed.js");
+        var tenantId = _configuration["AzureAppInfo:TenantId"];
+        var clientId = _configuration["AzureAppInfo:ClientId"];
+        var clientSecret = _configuration["AzureAppInfo:ClientSecret"];
+        var authorityUri = new Uri($"https://login.microsoftonline.com/{tenantId}");
+
+        var app = ConfidentialClientApplicationBuilder
+                    .Create(clientId)
+                    .WithClientSecret(clientSecret)
+                    .WithAuthority(authorityUri)
+                    .Build();
+
+        var powerbiApiDefaultScope = "https://analysis.windows.net/powerbi/api/.default";
+        var scopes = new string[] { powerbiApiDefaultScope };
+
+        try
+        {
+            var authResult = await app.AcquireTokenForClient(scopes).ExecuteAsync();
+            Console.Write("Access Token: "+authResult.AccessToken);
+            var tokenCredentials = new TokenCredentials(authResult.AccessToken, "Bearer");
+            var urlPowerBiServiceApiRoot = "https://api.powerbi.com/";
+            var pbiClient = new PowerBIClient(new Uri(urlPowerBiServiceApiRoot), tokenCredentials);
+
+            var workspaceId = new Guid("f9725b96-99d5-4c52-b336-9b064c07f05f");
+            var reportId = new Guid("7acccdc8-d5a4-4d7b-86bd-fd16fe4c82b7");
+            var report = pbiClient.Reports.GetReportInGroup(workspaceId, reportId);
+
+           
+
+            //////////////////////////////////////////////////////
+            ///// Changing parameters here ////////////////////////
+
+            //METHOD 1 DOESN'T WORK DUE TO FORBIDDEN ACCESS
+            //var request = new HttpRequestMessage(HttpMethod.Post,
+            //    "https://api.powerbi.com/v1.0/myorg/groups/"+workspaceId+"/datasets/"+reportId+"/Default.UpdateParameters");
+            //var client = ClientFactory.CreateClient();
+            //request.Content = JsonContent.Create("{ \"updateDetails\": [ { \"name\": \"CkyParam\",\"newValue\": \"" + userInfo.id + "\"}]}");
+            //var response = await client.SendAsync(request);
+
+            //METHOD 2 DOESN'T WORK DUE TO FORBIDDEN ACCESS
+            //var client = new HttpClient();
+            //var updateDetails=new UpdateMashupParameterDetails("CkyParam", userInfo.id);
+            //var updateRequest=new UpdateMashupParametersRequest(updateDetails);
+            //var jsonRequest = JsonSerializer.Serialize(updateRequest);
+            //var content = new StringContent(jsonRequest, System.Text.Encoding.UTF8, "application/json");
+            //var response = await client.PostAsync($"https://api.powerbi.com/v1.0/myorg/reports/{reportId}/updateMashupParameters", content);
+
+            //////////////////////////////////////////////////////
+            
+            //Using Row Level Security
+            var rls = new EffectiveIdentity(username: "bl360x@bl360x.onmicrosoft.com", new List<String> { "2ab6bdb6-35af-4a13-b0a1-b35908865b3a" }); 
+            var rolesList = new List<String>();
+            rolesList.Add(userInfo.id + "manager");
+            rls.Roles = rolesList;
+
+            var tokenRequest = new GenerateTokenRequest(TokenAccessLevel.View, report.DatasetId,rls);
+            var embedTokenResponse = await pbiClient.Reports.GenerateTokenAsync(workspaceId, reportId, tokenRequest);
+
+            var reportViewModel = new EmbeddedReportViewModel(
+                    report.Id.ToString(),
+                    report.Name,
+                    report.EmbedUrl,
+            embedTokenResponse.Token
+                );
+
+            return reportViewModel;
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
+    
+    
+}
+

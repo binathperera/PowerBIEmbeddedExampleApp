@@ -1,0 +1,9 @@
+﻿@layout MainLayout
+@page "/accounts"
+
+<h3>Accounts</h3>
+<p>@userInfo.id</p>
+@code {
+    [CascadingParameter]
+    public Data.UserInfoGlobalClass? userInfo { get; set; }
+}
