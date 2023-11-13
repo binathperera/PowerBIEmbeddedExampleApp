@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\BlazorAppPowerBI.csproj": {}
+    "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\BlazorAppPowerBI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\BlazorAppPowerBI.csproj": {
+    "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\BlazorAppPowerBI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\BlazorAppPowerBI.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\BlazorAppPowerBI.csproj",
         "projectName": "BlazorAppPowerBI",
-        "projectPath": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\BlazorAppPowerBI.csproj",
-        "packagesPath": "C:\\Users\\Binath Perera\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\obj\\",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\BlazorAppPowerBI.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Binath Perera\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -28,6 +27,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\admin\\source\\repos\\Bluelotus360BlazorHybrid\\nu-libs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -78,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

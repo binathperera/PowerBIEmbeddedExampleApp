@@ -9,57 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BlazorAppPowerBI
 build_property.RootNamespace = BlazorAppPowerBI
-build_property.ProjectDir = C:\Users\Binath Perera\source\repos\BlazorAppPowerBI\BlazorAppPowerBI\
+build_property.ProjectDir = C:\Users\admin\source\repos\PowerBIEmbeddedExampleApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Binath Perera\source\repos\BlazorAppPowerBI\BlazorAppPowerBI
+build_property.MSBuildProjectDirectory = C:\Users\admin\source\repos\PowerBIEmbeddedExampleApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Binath Perera/source/repos/BlazorAppPowerBI/BlazorAppPowerBI/App.razor]
+[C:/Users/admin/source/repos/PowerBIEmbeddedExampleApp/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Binath Perera/source/repos/BlazorAppPowerBI/BlazorAppPowerBI/Pages/Accounts.razor]
+[C:/Users/admin/source/repos/PowerBIEmbeddedExampleApp/Pages/Accounts.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Binath Perera/source/repos/BlazorAppPowerBI/BlazorAppPowerBI/Pages/Home.razor]
+[C:/Users/admin/source/repos/PowerBIEmbeddedExampleApp/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Binath Perera/source/repos/BlazorAppPowerBI/BlazorAppPowerBI/Pages/Inventory.razor]
+[C:/Users/admin/source/repos/PowerBIEmbeddedExampleApp/Pages/Inventory.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Binath Perera/source/repos/BlazorAppPowerBI/BlazorAppPowerBI/Pages/Login.razor]
+[C:/Users/admin/source/repos/PowerBIEmbeddedExampleApp/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Binath Perera/source/repos/BlazorAppPowerBI/BlazorAppPowerBI/Shared/LoginLayout.razor]
+[C:/Users/admin/source/repos/PowerBIEmbeddedExampleApp/Shared/LoginLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luTGF5b3V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Binath Perera/source/repos/BlazorAppPowerBI/BlazorAppPowerBI/_Imports.razor]
+[C:/Users/admin/source/repos/PowerBIEmbeddedExampleApp/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Binath Perera/source/repos/BlazorAppPowerBI/BlazorAppPowerBI/Shared/MainLayout.razor]
+[C:/Users/admin/source/repos/PowerBIEmbeddedExampleApp/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-nplj8rj466
 
-[C:/Users/Binath Perera/source/repos/BlazorAppPowerBI/BlazorAppPowerBI/Shared/NavMenu.razor]
+[C:/Users/admin/source/repos/PowerBIEmbeddedExampleApp/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-681nai33cb
 
-[C:/Users/Binath Perera/source/repos/BlazorAppPowerBI/BlazorAppPowerBI/Pages/Error.cshtml]
+[C:/Users/admin/source/repos/PowerBIEmbeddedExampleApp/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Binath Perera/source/repos/BlazorAppPowerBI/BlazorAppPowerBI/Pages/_Host.cshtml]
+[C:/Users/admin/source/repos/PowerBIEmbeddedExampleApp/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Binath Perera/source/repos/BlazorAppPowerBI/BlazorAppPowerBI/Pages/_Layout.cshtml]
+[C:/Users/admin/source/repos/PowerBIEmbeddedExampleApp/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

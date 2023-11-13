@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8tL4Qj7ZTfKwDObytV2r4JKbl8hN+lW88i/ypjn6oY0=",
+  "Hash": "hqu9cG6BFt9LYcWgZy/tddk/L22/zxn0XYyu416jwvU=",
   "Source": "BlazorAppPowerBI",
   "BasePath": "_content/BlazorAppPowerBI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BlazorAppPowerBI\\wwwroot",
       "Source": "BlazorAppPowerBI",
-      "ContentRoot": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\",
       "BasePath": "_content/BlazorAppPowerBI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BlazorAppPowerBI.styles.css",
+      "Identity": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BlazorAppPowerBI.styles.css",
       "SourceId": "BlazorAppPowerBI",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/BlazorAppPowerBI",
       "RelativePath": "BlazorAppPowerBI.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BlazorAppPowerBI.styles.css"
+      "OriginalItemSpec": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BlazorAppPowerBI.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BlazorAppPowerBI.bundle.scp.css",
+      "Identity": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BlazorAppPowerBI.bundle.scp.css",
       "SourceId": "BlazorAppPowerBI",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/BlazorAppPowerBI",
       "RelativePath": "BlazorAppPowerBI.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BlazorAppPowerBI.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BlazorAppPowerBI.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "BlazorAppPowerBI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\",
       "BasePath": "_content/BlazorAppPowerBI",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "BlazorAppPowerBI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\",
       "BasePath": "_content/BlazorAppPowerBI",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "BlazorAppPowerBI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\",
       "BasePath": "_content/BlazorAppPowerBI",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "BlazorAppPowerBI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\",
       "BasePath": "_content/BlazorAppPowerBI",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "BlazorAppPowerBI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\",
       "BasePath": "_content/BlazorAppPowerBI",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "BlazorAppPowerBI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\",
       "BasePath": "_content/BlazorAppPowerBI",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "BlazorAppPowerBI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\",
       "BasePath": "_content/BlazorAppPowerBI",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "BlazorAppPowerBI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\",
       "BasePath": "_content/BlazorAppPowerBI",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "BlazorAppPowerBI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\",
       "BasePath": "_content/BlazorAppPowerBI",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "BlazorAppPowerBI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\",
       "BasePath": "_content/BlazorAppPowerBI",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "BlazorAppPowerBI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\",
       "BasePath": "_content/BlazorAppPowerBI",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\css\\site.css",
       "SourceId": "BlazorAppPowerBI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\",
       "BasePath": "_content/BlazorAppPowerBI",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\embed.js",
+      "Identity": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\embed.js",
       "SourceId": "BlazorAppPowerBI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\",
       "BasePath": "_content/BlazorAppPowerBI",
       "RelativePath": "embed.js",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\embed.js"
     },
     {
-      "Identity": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\favicon.ico",
       "SourceId": "BlazorAppPowerBI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Binath Perera\\source\\repos\\BlazorAppPowerBI\\BlazorAppPowerBI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\PowerBIEmbeddedExampleApp\\wwwroot\\",
       "BasePath": "_content/BlazorAppPowerBI",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",

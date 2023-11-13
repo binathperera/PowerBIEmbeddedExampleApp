@@ -116,11 +116,10 @@
             var pbiClient = new PowerBIClient(new Uri(urlPowerBiServiceApiRoot), tokenCredentials);
 
             var workspaceId = new Guid("f9725b96-99d5-4c52-b336-9b064c07f05f");
-            var reportId = new Guid("7acccdc8-d5a4-4d7b-86bd-fd16fe4c82b7");
+            var reportId = new Guid("eb861514-b953-40f2-8501-50fe4e82c607");
             var report = pbiClient.Reports.GetReportInGroup(workspaceId, reportId);
 
-           
-
+            
             //////////////////////////////////////////////////////
             ///// Changing parameters here ////////////////////////
 
@@ -142,9 +141,9 @@
             //////////////////////////////////////////////////////
             
             //Using Row Level Security
-            var rls = new EffectiveIdentity(username: "bl360x@bl360x.onmicrosoft.com", new List<String> { "2ab6bdb6-35af-4a13-b0a1-b35908865b3a" }); 
+            var rls = new EffectiveIdentity(username: "bl360x@bl360x.onmicrosoft.com", new List<String> { "14e96b18-377b-4e34-bb3e-5eac5b967a5a" });
             var rolesList = new List<String>();
-            rolesList.Add(userInfo.id + "manager");
+            rolesList.Add("admin");
             rls.Roles = rolesList;
 
             var tokenRequest = new GenerateTokenRequest(TokenAccessLevel.View, report.DatasetId,rls);
